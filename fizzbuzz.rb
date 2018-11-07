@@ -2,10 +2,12 @@
 
 100.times{ |i|
 	j = i + 1
-	if j % 3 == 0 and j % 5 == 0 then puts "FizzBuzz"
-	elsif j % 3 == 0 then puts "Fizz"
-	elsif j % 5 == 0 then puts "Buzz"
-	elsif j % 7 == 0 then puts "git"
-	else puts j end
+	s = ""
+	
+	s << "Fizz" if j % 3 == 0
+	s << "Buzz" if j % 5 == 0
+	s << "git" if j % 7 == 0
+	s << j.to_s if s == ""
+	puts s
 }
 
