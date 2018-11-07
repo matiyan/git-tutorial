@@ -1,9 +1,10 @@
-!/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 100.times{ |i|
-	if i % 3 == 0 and i % 5 == 0 then puts "FizzBuzz"
-	elif i % 3 == 0 then puts "Fizz"
-	elif i % 5 == 0 then puts "Buzz"
-	else puts i end
+	j = i + 1
+	if j % 3 == 0 and j % 5 == 0 then puts "FizzBuzz"
+	elsif j % 3 == 0 then puts "Fizz"
+	elsif j % 5 == 0 then puts "Buzz"
+	else puts j end
 }
 
